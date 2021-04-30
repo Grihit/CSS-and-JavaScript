@@ -1,0 +1,46 @@
+body{
+    background-color: gray;
+}
+div.white_box{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: solid black thin;
+}
+h2{
+    text-align: center;
+}
+span.items{
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    margin-right: 3px;
+}
+img{
+    display: inline;
+}
+div.desc{
+    display: table;
+    overflow: auto;
+}
+div.rating{
+    display: table-cell;
+    vertical-align: top;
+    color: white;
+    border: solid white 5px;
+    overflow: hidden;
+}
+span.value{
+    background-color: green;
+    font-size: 30pt;
+    padding: 20px;
+    
+}
+div.score{
+    display: table-cell;
+    vertical-align: top;
+}
+span.meta{
+    font-size: 18pt;
+}

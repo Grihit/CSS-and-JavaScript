@@ -1,0 +1,44 @@
+div.outer{
+    border: solid black thin;
+}
+div.top{
+    position: relative;
+    border: solid black thin;
+    margin: 8px;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    opacity: 0.7;
+    z-index: 1;
+    width: 100%;
+}
+p.title{
+    position: relative;
+    z-index: 2;
+    margin: 50px 8px;
+    font-size: 25pt;
+    font-weight: bolder;
+}
+div.flex-container{
+    display: flex;
+}
+div.navigation{
+    border: solid black thin;
+    margin: 0px 8px 8px 8px;
+    padding: 8px;
+    width: 50%;
+    background-color: lightyellow;
+}
+div.navigation a{
+    font-size: large;
+}
+div.content{
+    border: solid black thin;
+    margin: 0px 8px 8px 0px;
+    padding: 8px;
+}
+a:hover{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q6</title>
+</head>
+<body>
+    <form>
+        <h1>
+        <label for="hours">Enter the number of hours: </label>
+        <input type="text" id="hours" name="hours" value="0">
+        <button type="button" value="submit" onclick="calculate_Charges()">Submit</button>
+        </h1>
+    </form>
+    <h1 id="display"></h1>
+    <script>
+    var total = 0.0;
+    var sum = 0.0;
+    function calculate_Charges()
+    {
+        sum=0.0;
+        var x = document.getElementById("hours").value;
+        if(x<=3 && x>0)
+            sum = 2.0;
+        else{
+            sum = 2.0
+            for(var i=4;i<=x;i++)
+                sum = sum + 0.5;
+        }
+        if(sum>10)
+            sum=10;
+        total = total + sum;
+        document.getElementById("display").innerHTML = "The charge for the customer: $"+ sum +"<br>The running total of yesterday's receipt: $"+ total;
+    }
+    </script>
+</body>
+</html>

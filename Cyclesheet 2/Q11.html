@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q11</title>
+<script src="Q11.js"></script>
+</head>
+<body style="padding: 20px;">
+    <form>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" pattern="^[A-Z]\w+(\s[A-Z]{1}\.)+$"><br><br>
+        <label for="email">Email ID: </label>
+        <input type="email" name="email" id="email" pattern="\w+@\w+(\.[a-z]{2,})+$"><br><br>
+        <label for="mobile">Mobile No: </label>
+        <input type="text" name="mobile" id="mobile"  pattern="^[9,8,7]{1}[0-9]{9}$"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="18" max="60"><br><br>
+        <button type="button" onclick="ValidateForm();">Submit</button>
+    </form>
+    <p id="disp"></p>
+</body>
+</html>

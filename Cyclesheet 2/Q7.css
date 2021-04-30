@@ -1,0 +1,56 @@
+body{
+    padding: 20px;
+}
+.box{
+    border: solid black 2px;
+    background-color: rgb(196, 193, 193);
+    margin: 100px auto;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.word{
+    display: inline-block;
+    color: red;
+    font-size: 72px;
+}
+.answer{
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.check{
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(2, 197, 2);
+    border-radius: 20px;
+    color: white;
+    margin-top: 0px;
+    border: solid 2px black;
+}
+.hint{
+    color: rgb(2, 143, 2);
+    font-size: 32px;
+}
+.answer:focus{
+    outline: none;
+}
+.check:hover{
+    background-color: rgb(2, 155, 2);
+}
+.check:active{
+    background-color: rgb(1, 119, 1);
+}
+.check:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    opacity: 0.7;
+}

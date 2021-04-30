@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q5</title>
+<link rel="stylesheet" href="Q5.css">
+<script src="Q5.js"></script>
+</head>
+<body>
+    <h1 class="center">Greeting Card</h1><br>
+    <div class="center">
+        <div class="card" id="bimg">
+            <form>
+                <input type="text" placeholder="Insert Heading Here" class="heading">
+                <br><br><br>
+                <div id="imgContainer">
+                    <img id="cardImage" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/480px-Happy_smiley_face.png">
+                </div>
+                 <br><br><br>
+                <textarea cols="60" rows="13" placeholder="Enter the body of the greeting card here" class="body" id="btext"></textarea> 
+            </form>
+        </div>
+    </div>
+    <br>
+    <span class="option">Choose a background image:</span>
+    <br><br>
+    <div class="flex">
+        <img src="https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg" onclick="upDate_img(this)">
+        <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-448-pai-208.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=10bba5369035df0f4e89fab0de99b572" onclick="upDate_img(this)">
+        <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470" onclick="upDate_img(this)">
+    </div>
+    <br>
+    <span class="option">Choose position of the image: </span>
+    <br><br>
+    <div class="flex">
+        <span class="color-options" style="padding: 10px 20px;" onclick="changePosition('left')">left</span>
+        <span class="color-options" style="padding: 10px 20px;" onclick="changePosition('center')">center</span>
+        <span class="color-options" style="padding: 10px 20px;" onclick="changePosition('right')">right</span>
+    </div>
+    <br>
+    <span class="option">Choose a font size for the body:</span>
+    <br><br>
+    <div class="flex">
+        <span class="color-options" style="font-size: 14px; padding: 10px 20px;" onclick="upDate_size(14)">14px </span>
+        <span class="color-options" style="font-size: 16px; padding: 10px 20px;" onclick="upDate_size(16)">16px </span>
+        <span class="color-options" style="font-size: 18px; padding: 10px 20px;" onclick="upDate_size(18)">18px</span>
+    </div>
+    <br>
+    <span class="option">Choose a font color for the body:</span>
+    <br><br>
+    <div class="flex">
+        <span class="color-options" style="color: blue; padding: 10px 20px;" onclick="upDate_color('blue')">Blue </span>
+        <span class="color-options" style="color: red; padding: 10px 20px;" onclick="upDate_color('red')">Red </span>
+        <span class="color-options" style="color: black; padding: 10px 20px;" onclick="upDate_color('black')">Black</span>
+    </div>
+    
+</body>
+</html>

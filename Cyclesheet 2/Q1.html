@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1</title>
+<script>
+    var num1=prompt("Enter the first number: ","0");
+    var num2=prompt("Enter the second number: ","0");
+    var num3=prompt("Enter the third number: ","0");
+    var max=0;
+    num1=parseInt(num1);
+    num2=parseInt(num2);
+    num3=parseInt(num3); 
+    if(num1>num2 && num1>num3)
+    {
+        max=num1;
+    }
+    else if (num2>num1 && num2>num3)
+    {
+        max=num2;
+    }
+    else
+    {
+        max=num3;
+    }
+</script>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <script>
+        document.getElementById("display").innerHTML = "The maximum is " +max;
+    </script>
+</body>
+</html>

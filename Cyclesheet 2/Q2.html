@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2</title>
+    <script>
+        function count(arr,n) {
+            var c=0;
+            for(var i=0;i<n;i++)
+            {
+                if(arr[i]>13 && arr[i]<29)
+                    c++;
+            }
+            return c;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <script>
+        var arr = [21,16,5,9,14,45,40,24,18,60];
+        var n=10;
+        var c = count(arr,n);
+        document.getElementById("display").innerHTML = "The number of items in the array that is greater than 13 and less than 29 are " +c;
+    </script>
+</body>
+</html>

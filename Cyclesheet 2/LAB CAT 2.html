@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAB CAT 2</title>
+<script>
+    function Reverse(){
+        var output = "";
+        var x=document.getElementById("reverse").value;
+        for(var i=x.length;i>0;i--)
+        {
+            output = output + x.charAt(i-1);
+        }
+        document.getElementById("final").value = output;
+    }
+</script>
+</head>
+<body style="padding: 20px;">
+    <div style="margin: auto; width: 30%; border: solid black 1px; text-align: center; padding: 20px;">
+        <form>
+            <label for="reverse">Enter the String: </label>
+            <input type="text" id="reverse" name="reverse" value="">
+            <button type="button" value="reverse" onclick="Reverse()">REVERSE!</button><br><br>
+            <label for="reverse">Reverse of the String: </label>
+            <input type="text" id="final" name="final" value="" readonly>
+        </form>
+    </div>
+</body>
+</html>

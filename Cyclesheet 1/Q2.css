@@ -1,0 +1,23 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+    border: thick;
+    border-style: solid;
+}
+td{
+    color: red;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: oblique;
+}
+li{
+    color: green;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+ol{
+    text-align: left;
+}

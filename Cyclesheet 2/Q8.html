@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q8</title>
+<script>
+    var ano=[];
+    var limit=[];
+    var bbal=[];
+    var exp=[];
+    var pay=[];
+    var nbal=[];
+    var i=0;
+    function myfunction(){
+        var x=prompt("Account number","0");
+        var y=prompt("Balance at the beginning of the month","0");
+        var z=prompt("Total of all items charged this month","0");
+        var a=prompt("Total of all credits applied to the account this month","0");
+        var b=prompt("Allowed credit limit","0");
+        x=parseInt(x);
+        y=parseInt(y);
+        z=parseInt(z);
+        a=parseInt(a);
+        b=parseInt(b);
+        ano.push(x);
+        limit.push(b);
+        bbal.push(y);
+        exp.push(z);
+        pay.push(a);
+        nbal[i]=bbal[i]+exp[i]-pay[i];
+        //for(var k=0;k<ano.length();k++)
+        //{
+        //    document.write("Account number: "+ano[i]+"<br>Credit limit: "+limit[i]+"<br>Total Expenditure: "+exp[i]+"<br>Total Credit Payments: "+pay[i]+"<br>New Balance: "+nbal[i]);
+        //}
+        document.getElementById("disp").innerHTML += "Account number: "+ano[i]+"<br>Beginning balance: "+bbal[i]+"<br>Credit limit: "+limit[i]+"<br>Total Expenditure: "+exp[i]+"<br>Total Credit Payments: "+pay[i]+"<br>New Balance: "+nbal[i];
+        if(nbal[i]>limit[i])
+            document.getElementById("disp").innerHTML += "<br>Credit Limit Exceeded<br><br>";
+        else
+            document.getElementById("disp").innerHTML += "<br><br>";
+        i++;    
+    }
+</script>
+</head>
+<body>
+    <span id="disp"></span>
+    <button onclick="myfunction()">Add new customer</button>
+</body>
+</html>

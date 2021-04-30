@@ -1,0 +1,36 @@
+p.top-heading{
+    font-size: 50pt;
+    margin: 10px;
+    font-weight: 900;
+}
+p.bottom-heading{
+    font-size: 20pt;
+    margin: 10px;
+    font-weight: 600;
+}
+div.newspaper{
+    column-count: 4;
+    text-align: justify;
+}
+span.first{
+    font-size: 60pt;
+    float: left;
+}
+div.image{
+    border: solid black thin;
+    background-color: red;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+div.image span{
+    font-size: 20pt;
+    color: white;
+    font-weight: 800;
+}
+div.blue-box{
+    background-color: lightblue;
+    border: solid rgba(126, 201, 226, 0.555);
+    font-weight: bold;
+}
